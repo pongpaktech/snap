@@ -23,7 +23,7 @@
 
 #undef RGBLIGHT_ENABLE
 #define RGBLIGHT_ENABLE
-//#undef RGBLIGHT_ANIMATIONS
+#undef RGBLIGHT_ANIMATIONS
 
 #define RGBLIGHT_DEFAULT_HUE 127    // Default color is Cyan
 #define RGBLIGHT_HUE_STEP 16
