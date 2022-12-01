@@ -47,13 +47,13 @@ void matrix_scan_kb(void) {
 }
 
 // Use Bit-C LED to show CAPS LOCK and NUM LOCK status
-/* bool led_update_kb(led_t led_state) {
+bool led_update_kb(led_t led_state) {
     bool res = led_update_user(led_state);
     if (res) {
         if (is_keyboard_master()) set_bitc_LED(led_state.caps_lock ? LED_DIM : LED_OFF);
     }
     return res;
-} */
+}
 
 bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
     // If console is enabled, it will print the matrix position and status of each key pressed
