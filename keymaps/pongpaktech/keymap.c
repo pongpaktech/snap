@@ -31,8 +31,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     RGB_M_P,_______,MEH(KC_1),MEH(KC_2),MEH(KC_3),MEH(KC_4),_______,_______,     _______, _______, _______, _______, _______, _______, _______, XXXXXXX, _______,
      RGB_M_B, _______, RGB_HUI, RGB_SAI, _______, _______, _______,              _______, _______, _______, _______, _______, _______, _______, _______, _______,
     RGB_M_SN, KC_NUM , RGB_HUD, RGB_SAD, _______, _______, _______,              _______, _______, _______, G(KC_L), _______, _______,      _______,     _______,
-     RGB_M_K, _______, _______, _______, _______, _______, _______, QK_BOOT,     NK_TOGG, _______, _______, _______, _______,      _______,     KC_BRIU, _______,
-    RGB_M_SW, CL_TOGG, GUI_TOG, _______, _______,        RGB_TOG,                         RGB_TOG,        _______,_______,_______,C(G(KC_LEFT)),KC_BRID,C(G(KC_RGHT))
+     RGB_M_K, CW_TOGG, _______, _______, _______, _______, _______, QK_BOOT,     NK_TOGG, _______, _______, _______, _______,      _______,     KC_BRIU, _______,
+    RGB_M_SW, _______, GUI_TOG, _______, _______,        RGB_TOG,                         RGB_TOG,        _______,_______,_______,C(G(KC_LEFT)),KC_BRID,C(G(KC_RGHT))
     )
     /*
     [X] = LAYOUT_all(
@@ -190,9 +190,9 @@ static void render_status(void) {
         oled_write_P(PSTR("     "), false);
     }
 
-    if (keymap_config.swap_control_capslock) {
+    if (is_caps_word_on()) {
         oled_set_cursor(8, 3);
-        oled_write_P(PSTR("Cap <> Ctrl"), true);
+        oled_write_P(PSTR(" Caps Word "), true);
     } else {
         oled_set_cursor(8, 3);
         oled_write_P(PSTR("           "), false);
