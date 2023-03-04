@@ -25,7 +25,7 @@
 // Selectively define RGB modes to save some space
 // VIA support won't fit otherwise
 #ifdef RGBLIGHT_ENABLE
-// #undef RGBLIGHT_ANIMATIONS
+#undef RGBLIGHT_ANIMATIONS
 // #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 #define RGBLIGHT_EFFECT_STATIC_GRADIENT
