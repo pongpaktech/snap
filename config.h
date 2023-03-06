@@ -27,8 +27,8 @@
 /* space savers */
 // #define NO_ACTION_TAPPING // Waiting on QMK #11528
 #define NO_ACTION_ONESHOT
-#define IGNORE_MOD_TAP_INTERRUPT
-#define TAPPING_FORCE_HOLD
+//#define IGNORE_MOD_TAP_INTERRUPT
+//#define TAPPING_FORCE_HOLD
 #define DYNAMIC_KEYMAP_LAYER_COUNT 3
 
 /* split config */
@@ -65,7 +65,7 @@
 #define RGB_DI_PIN B2
 #define RGBLED_NUM 10
 #define RGBLED_SPLIT { 5, 5 }
-#define RGBLIGHT_LED_MAP { 8, 9, 0, 1, 2, 6, 7, 3, 4, 5 }  
+#define RGBLIGHT_LED_MAP { 8, 9, 0, 1, 2, 6, 7, 3, 4, 5 }
 #define RGBLIGHT_SLEEP
 #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD
